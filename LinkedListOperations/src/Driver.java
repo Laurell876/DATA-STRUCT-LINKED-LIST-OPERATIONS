@@ -8,7 +8,7 @@ public class Driver {
 		people.insertAtFront(people.getHead(), "Sammy");
 		
 		
-		System.out.println(people.head.getData());
+		//System.out.println(people.head.getData());
 		
 		people.insertAtBack(people.getHead(), "Johnny");
 		
@@ -20,8 +20,12 @@ public class Driver {
 			curr=curr.getNext();	
 		}
 		//people.DestroyList(people.getHead());
-	
-
+		boolean found = people.SearchForNode(people.getHead(), "Laurell");
+		System.out.println(found);
+		System.out.println("The list has: " +  Integer.toString(people.CountNodes(people.getHead())) + " Node(s)");
+		
+		
+		
 	}
 
 }
